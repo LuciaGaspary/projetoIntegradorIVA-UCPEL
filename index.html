@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css e javaScript-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js" defer></script>
+    <!-- links bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Instituto de Menores</title>
+</head>
+<body>
+    <header>
+      <div>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="titulo-principal">Instituto de Menores | Dom Antônio Zattera</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse menu-position" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="#sobre-nos">Início</a>
+                  <a class="nav-link" href="#equipe">Equipe</a>
+                  <a class="nav-link" href="#projetos">Projetos</a>
+                  <a class="nav-link" href="#parceiros">Parceiros</a>
+                  <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contato</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- carrossel -->
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+              <img src="images/imagen-instituto-3.webp" class="d-block w-100 imagem-carrosel" alt="Apresentação">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/imagem-instituto-4.webp" class="d-block w-100 imagem-carrosel" alt="Aula de musica">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/imagem-instituto-5.webp" class="d-block w-100 imagem-carrosel" alt="Fenadoce">
+          </div>
+        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- texto de apresentação -->
+      <div id="sobre-nos" class="texto-apresentacao">
+        <div>
+          <h1>Sobre Nós</h1>
+        </div>
+        <section class="texto-secundario">
+          <p>Já se passaram algumas décadas desde que se percebeu a importância do acompanhamento comprometrido 
+          à crianças em situacão de vulnerabilidade social<br>
+          em Pelotas no Rio Grande do Sul.<br>
+          </p>
+          <p>
+          Tudo comecou por iniciativa de Dom Joaquim de Mello, Bispo de Pelotas em 1924 que fundou 
+          a Associação Protetora de Meninos Desvalidos, passando a <br>se chamar de Instituto de Menores em 1945.<br>
+          </p>
+          <p>
+          O Instituto de Menores tem como objetivo promover a humanização e evangelização executadas através da
+          educação e a busca da profissionalização, além <br>de promover a oportunidade de convivência sadia e fraterna,
+          através do lazer, esporte e atividades culturais que exercitam a cidadania, bem como apoio<br> as ações
+          do ensino formal, valorização do estudo e do trabalho.
+          </p>
+          <p>
+          Hoje o Instituto de Menores atua com uma equipe de funcionários e voluntários que realizam diversos 
+          projetos na instituição.
+          </p>
+        </section>
+      </div>
+
+      <!-- Equipe -->
+      <div id="equipe" class="texto-apresentacao">
+        <div>
+          <h1>Equipe</h1>
+        </div>
+        <p class="citacao">
+          Uma ideia, quando é processada por duas ou mais mentes que tem a mesma intenção focada, <br>
+          se transforma em realidade numa velocidade incrível. <br>
+          "Elder Formigoni"
+        </p>
+        <p class="texto-secundario"><a href="equipe.html">Clique aqui</a> para conhecer a nossa equipe!</p>
+        </div>
+
+      <!-- Projetos -->
+      <div id="projetos" class="texto-apresentacao">
+        <div>
+          <h1>Projetos</h1>
+        </div>
+        <p class="texto-secundario">
+          O Instituto de Menores possui diversos projetos voltados para o 
+          desenvolvimento pessoal das crianças. Confira a seguir!
+        </p>
+
+        <!-- projetos linha 1 -->
+          <div class="card-group">
+            <div class="card-projetos">
+              <button 
+                type="button" 
+                class="btn texto-projetos " 
+                data-bs-toggle="popover" 
+                data-bs-title="Quem luta, não briga" 
+                data-bs-content="Projeto que ensina luta para crianças, participando e vencendo diversas 
+                competicoes estaduais "
+                >
+                Quem luta, não briga
+              </button>
+            </div>
+            
+            <div class="card-projetos">
+              <button 
+              type="button" 
+              class="btn texto-projetos " 
+              data-bs-toggle="popover" 
+              data-bs-title="Notas de esperança" 
+              data-bs-content="Professor, maestro, músico, compositor, arranjador e produtor: Sérgio Guimarães.
+              O objetivo do projeto é promover a inclusão social através da música. Ao longo dos anos o projeto
+              foi expandindo e foi criado O Coral Infanto Juvenil, o Grupo de Percussão e o Projeto Musicalização 
+              para Crianças na faixa etária de 7 a 9 anos. As atividades musicais desenvolvidas em equipe
+               se traduzem como fator relevante de socialização, contribuindo, significativamente, para 
+               o relacionamento de cada um consigo, com o outro e com o universo do próprio instituto. 
+               Eles se abriram para superar desafios, descobrir horizontes, transpor limites e para novas 
+               formas de interação com os colegas, professores, família e seu bairro."
+              >
+              Notas de esperança
+            </button>
+            </div>
+            
+            <div class="card-projetos">
+              <button 
+              type="button" 
+              class="btn texto-projetos " 
+              data-bs-toggle="popover" 
+              data-bs-title="Banda de musica" 
+              data-bs-content="A Banda de Música é coordenada pelo Maestro Sérgio Guimarães em parceria 
+              com o professor Jonas Almeida. O projeto abrange as crianças de 12 a 17 anos, com aulas 
+              semanais na instituição. Muito além de música, o projeto pensa na socialização das crianças
+               e adolescentes através da música, incentivando valores como a responsabilidade, o respeito
+                e o cuidado."
+              >
+              Banda de musica
+            </button>
+            </div>
+
+            <div class="card-projetos">
+              <button 
+              type="button" 
+              class="btn texto-projetos " 
+              data-bs-toggle="popover" 
+              data-bs-title="Dança" 
+              data-bs-content="Dançar para se movimentar, para aprender a respeitar o espaço do outro, 
+              para aprender sobre o próprio corpo. Dançar para aprender sobre ritmos, para sentir a 
+              música e expressar sentimentos. "
+              >
+              Dança
+            </button>
+            </div>
+          </div>
+        <!-- projetos linha 1-->
+        <!-- projetos linha 2 -->
+          <div class="card-group">
+            <div class="card-projetos">
+              <button 
+              type="button" 
+              class="btn texto-projetos " 
+              data-bs-toggle="popover" 
+              data-bs-title="Entrelaçando linhas e sonhos" 
+              data-bs-content="Entrelaçando Linhas e Sonhos, além do nome do projeto, é também a 
+              realidade que vivemos diariamente nas salas de corte, costura e estamparia.
+              Ensinamos a fazer modelagem, costurar, estampar, e customizar. Isso, com toda certeza 
+              muda realidades! Mas sentir-se pertencente a um grupo de mulheres que levantam outras 
+              mulheres e acreditam no grande potencial de cada companheira, isso, muda realidades 
+              internas e externas. O projeto inicia em 2021 e sonha, em um futuro próximo, criar uma 
+              cooperativa com as alunas que se apaixonarem pelas habilidades adquiridas no curso."
+              >
+              Entrelaçando linhas e sonhos
+            </button>
+            </div>
+            
+            <div class="card-projetos">
+              <button 
+              type="button" 
+              class="btn texto-projetos " 
+              data-bs-toggle="popover" 
+              data-bs-title="Educação infantil" 
+              data-bs-content="As cores, as letras, os números... São tantas coisas a se trabalhar com 
+              os pequeninos! Sem falar nos valores de ética que devem ser ensinados desde cedo."
+              >
+              Educação infantil
+            </button>
+            </div>
+            
+            <div class="card-projetos">
+              <button 
+              type="button" 
+              class="btn texto-projetos " 
+              data-bs-toggle="popover" 
+              data-bs-title="Clube de mães" 
+              data-bs-content="O Clube de Mães, surgiu com a ideia de ajudar as mães das nossas crianças 
+              a terem uma auxilio na renda, através da confecção de doces e salgados. 
+              As atividades ocorrem semanalmente, conduzidas por uma voluntária. Nos encontros as 
+              mulheres, aprendem a fazer receitas como de Bolo de Aniversário, Esfirra, entre outros 
+              exemplos. Os alimentos produzidos no curso, são distribuídos na hora do lanche para os 
+              alunos."
+              >
+              Clube de mães
+            </button>
+            </div>
+
+            <div class="card-projetos">
+              <button 
+                type="button" 
+                class="btn texto-projetos " 
+                data-bs-toggle="popover" 
+                data-bs-title="Reforço escolar" 
+                data-bs-content="Não são poucas as crianças que encontramos com muita dificuldade em ler, 
+                escrever e interpretar. Para sanar esse problema que é uma ameaça ao futuro do nosso país,
+                o IMDAZ possui profissionais especiais focados na alfabetização e reforço escolar. "
+                >
+                Reforço escolar
+              </button>
+            </div>
+        </div>
+      <!-- projetos linha 2-->
+      </div>
+
+      <!-- Parceiros -->
+      <div class="texto-apresentacao">
+        <div id="parceiros">
+          <h1>Parceiros</h1>
+        </div>
+        <p class="texto-secundario">
+          Se você deseja se tornar parceiro do nosso Instituto e ajudar a contribuir para a educação de minhares de crianças <br> 
+          em situação de necessidade, não hesite em entrar em 
+          <a class="" data-bs-toggle="modal" data-bs-target="#contactModal">Contato</a>. <br><br>
+          Deixe suas informações e alguém de nossa equipe entrará em contato o mais breve possivel!
+        </p>
+      </div>
+
+        <!-- cards de parceiros -->
+        <!-- card nicolini -->
+      <div class="card-group">      
+          <div class="card-group">
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="images/super nicolini.png" class="imagem-card" alt="Supermercado Nicolini">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.supernicolini.com.br/" target="_blank">Supermercado Nicolini</a></h6>
+              </div>
+            </div>
+            <!-- card nicolini -->
+
+            <!-- card Banco de Alimentos de Pelotas -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/banco-de-alimentos.jpeg" class="imagem-card" alt="Banco de Alimentos de Pelotas">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.bancodealimentospelotas.org.br/Inicial" target="_blank">Banco de Alimentos de Pelotas</a></h6>
+              </div>
+            </div>
+            <!-- card Banco de Alimentos de Pelotas -->
+
+            <!-- card Biscoitos Zezé -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/biscoitos-zeze.png" class="imagem-card" alt="Biscoitos Zezé">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://zeze.com.br/" target="_blank">Biscoitos Zezé</a></h6>
+              </div>
+            </div>
+            <!-- card Biscoitos Zezé -->
+
+            <!-- card Construtora Roberto Ferreira -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/construtora-roberto-ferreira.jpeg" class="imagem-card" alt="Construtora Roberto Ferreira">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://robertoferreira.com.br/" target="_blank">Construtora Roberto Ferreira</a></h6>
+              </div>
+            </div>
+            <!-- card Construtora Roberto Ferreira -->
+          </div>
+
+          <!-- linha2 -->
+          <div class="card-group">
+            <!-- card ecosul -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/ecosul.jpeg" class="imagem-card" alt="Ecosul">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.ecosul.com.br/" target="_blank">Ecosul</a></h6>
+              </div>
+            </div>
+            <!-- card ecosul -->
+
+            <!-- card Supermercado Guanabara -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/supermercado-guanabara.jpeg" class="imagem-card" alt="Supermercado Guanabara">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.smguanabaraonline.com.br/" target="_blank">Supermercado Guanabara</a></h6>
+              </div>
+            </div>
+            <!-- card Supermercado Guanabara -->
+
+            <!-- card Josapar -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/josapar.jpeg" class="imagem-card" alt="Josapar">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://josapar.com.br/" target="_blank">Josapar</a></h6>
+              </div>
+            </div>
+            <!-- card Josapar -->
+
+            <!-- card Paroquia Sagrado Coração de Jesus -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/paroquia-sagrado-coracao-de-jesus.png" class="imagem-card" alt="Paroquia Sagrado Coração de Jesus">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.paroquiadoporto.com.br/" target="_blank">Paroquia Sagrado Coração de Jesus</a></h6>
+              </div>
+            </div>
+            <!-- card Paroquia Sagrado Coração de Jesus -->
+          </div>
+          <!-- linha 2 -->
+
+          <!-- linha3 -->
+          <div class="card-group">
+            <!-- card Lojas Quero Quero -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/quero-quero.png" class="imagem-card" alt="Lojas Quero Quero">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.queroquero.com.br/" target="_blank">Lojas Quero Quero</a></h6>
+              </div>
+            </div>
+            <!-- card Lojas Quero Quero -->
+
+            <!-- card Rádio Universidade -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/radio-universidade.jpg" class="imagem-card" alt="Rádio Universidade">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://ru.ucpel.edu.br/" target="_blank">Rádio Universidade</a></h6>
+              </div>
+            </div>
+            <!-- card Rádio Universidade -->
+
+            <!-- card Rudi Bonow -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/rudi-bonow.jpeg" class="imagem-card" alt="Rudi Bonow">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.instagram.com/rudibonowhortifruti/" target="_blank">Rudi Bonow</a></h6>
+              </div>
+            </div>
+            <!-- card Rudi Bonow -->
+
+            <!-- card Universidade Católica de Pelotas -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/ucpel.jpeg" class="imagem-card" alt="Universidade Católica de Pelotas">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://ucpel.edu.br/" target="_blank">Universidade Católica de Pelotas</a></h6>
+              </div>
+            </div>
+            <!-- card Universidade Católica de Pelotas -->
+          </div>
+          <!-- linha 3 -->
+
+          <!-- linha4 -->
+          <div class="card-group">
+            <!-- card Solum Construtora -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/solum-construtora.png" class="imagem-card" alt="Solum Construtora">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.solumconstrutora.com.br/" target="_blank">Solum Construtora</a></h6>
+              </div>
+            </div>
+            <!-- card Solum Construtora -->
+
+            <!-- card Emater -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/emater.png" class="imagem-card" alt="Emater">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.emater.tche.br/site/index.php" target="_blank">Emater</a></h6>
+              </div>
+            </div>
+            <!-- card Emater -->
+
+            <!-- card Paróquia São Cristóvão -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/pariquia-sao-cristovao.png" class="imagem-card" alt="Paróquia São Cristóvão">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.facebook.com/paroquiasaocristovaopelotas/?locale=pt_BR" target="_blank">Paróquia São Cristóvão</a></h6>
+              </div>
+            </div>
+            <!-- card Paróquia São Cristóvão -->
+
+            <!-- card Lagartaria -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/lagartaria.jpeg" class="imagem-card" alt="Lagartaria">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.instagram.com/lagartaria/" target="_blank">Lagartaria</a></h6>
+              </div>
+            </div>
+            <!-- card Lagartaria -->
+          </div>
+          <!-- linha 4 -->
+
+          <!-- linha5 -->
+          <div class="cards-ultima-linha">
+            <!-- card Secovi -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/secovi.png" class="imagem-card" alt="Secovi">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.secovirsagademi.com.br/site/home/index.php" target="_blank">Secovi</a></h6>
+              </div>
+            </div>
+            <!-- card Secovi -->
+
+            <!-- card Radio Maisnova -->
+            <div class="meu-card">
+              <div class="card-parceiros">            
+                <img src="/images/radio_maisnovafmpelotas.png" class="imagem-card" alt="Radio Maisnova">
+              </div>
+              <div class="card-body card-texto">
+                <h6 class="card-title"><a href="https://www.maisnova.com.br/" target="_blank">Radio Maisnova</a></h6>
+              </div>
+            </div>
+            <!-- card Radio Maisnova -->
+          </div>
+          <!-- linha 4 -->
+      </div>
+
+      <!-- mapa -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.6750407710488!2d-52.30559922485192!3d-31.75206977410874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b45b5f08525b%3A0x3a9b21dd7750f19c!2sAv.%20Domingos%20de%20Almeida%2C%203150%20-%20Areal%2C%20Pelotas%20-%20RS%2C%2096085-470!5e0!3m2!1spt-BR!2sbr!4v1694914862060!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0; padding-top: 32px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <!-- Modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="contactModalTitle">Contato</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="nomeCompleto" placeholder="Digite seu nome completo">
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite o seu telefone">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+              </div>
+              <div class="mb-3">
+                <select  class="form-select" id="selectOption"> 
+                  <option value="" selected>Clique para selecionar um assunto</option>
+                  <option value="">Quero ser voluntario</option>
+                  <option value="">Quero Doar</option>
+                  <option value="">Quero trabalhar</option>
+                  <option value="">Quero ser parceiro</option>
+                  <option value="">Quero saber sobre os Projetos</option>
+                  <option value="">Outro</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="textArea" rows="3" placeholder="Digite sua mensagem"></textarea>
+              </div>
+              <div class="modal-text">
+                Se preferir, pode entrar em contato pelo telefone (53) 3228.5505 <br>
+                Horario de atendimento: Segunda à Sexta das 08:00 - 17:00
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="meu-rodape">
+      <nav class="navbar bg-body-tertiary container-footer">
+        <div>
+          <section>
+            Endereço: <br>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>   Av. Domingos de Almeida 3150 - Pelotas - RS<br>
+            <i class="fa fa-phone" aria-hidden="true"></i>  (53) 3228.5505
+          </section>
+        </div>
+        <div>
+          <section>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>   Horário de Atendimento <br>
+            Segunda à Sexta. <br>
+            08:00 - 17:00 <br>
+            Sábados / Domingos / Feriados - FECHADO
+          </section>
+        </div>
+        <div>
+          <section>
+            Seja um voluntário!<br>
+            Entre em contato pelo formulario ou redes sociais <br>
+            <div class="redes-sociais">
+              <a href="https://www.instagram.com/imdaaz/?igshid=1d5259ryfzjqr" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/institutodemenoresdaz" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </div>
+          </section>
+        </div>
+      </nav>
+      <nav class="navbar barra-inferior">
+        <p class="barra-inferior-texto"><i class="fa fa-copyright" aria-hidden="true"></i> ADS UCPEL / 2023</p>
+      </nav>
+    </footer>
+
+    <!-- btn scroolTop -->
+    <div id="scrollToTopButton">
+      <a href="#top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+      </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Josefin+Sans:wght@700&family=Roboto:wght@300;400;700&display=swap');
+
+/* reset pagina */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo navbar */
+/* titulo navbar */
+.titulo-principal {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: #414141;
+    font-style: none;
+}
+
+/* posicao do menu da navbar */
+.menu-position {
+    margin-left: 730px;
+}
+
+/* Estilo carrossel */
+.imagem-carrosel {
+    object-fit: cover;
+    height: 500px;
+}
+
+/* Estilo textos */
+.texto-apresentacao {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.texto-secundario {
+    font-size: 20px;
+}
+
+.citacao{
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Estilo projetos */
+.card-group {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-projetos {
+    border: 1px solid #cccccc;
+    background-color: #bfc2f7;
+    color: black;
+    cursor: pointer;
+    height: 59px;
+    width: 360px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.card-projetos:hover {
+    background-color: #d3d5ff;
+    color: #949494;
+}
+
+.texto-projetos {
+    margin-top: 10px;
+}
+
+/* Estilo Parceiros */
+.meu-card {
+    border: 1px solid #cccccc;
+    border-radius: 32px;
+    width: 300px;
+    height: 200px;
+}
+
+.card-parceiros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.imagem-card {
+    width: 150px;
+    height: 150px;
+}
+
+.card-texto {
+    text-align: center;
+    margin-top: 8px;    
+}
+
+.cards-ultima-linha {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Estilo texto modal */
+.modal-text {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Estilo rodapé */
+.meu-rodape {
+    font-size: 16px;
+}
+
+.container-footer {
+    margin: 16px;
+}
+
+.redes-sociais {
+   font-size: 46px
+}
+
+.barra-inferior {
+    height: 80px;
+    background-color: rgb(66, 66, 66); 
+    color: white;
+}
+
+.barra-inferior-texto {
+    width: 100%; 
+    text-align: center;
+}
+
+/* scroolTop */
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffd000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+  }
+  
+  #scrollToTopButton a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #scrollToTopButton:hover {
+    background-color: #eec201;
+  }
+
+  /* estilo tabelas */
+  .table-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60rem;
+    margin-left: 260px;
+  }
